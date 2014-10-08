@@ -20,8 +20,13 @@ return -1;
 }
 
 int main(void){
-int from,until;
-
+int from,until,i,money=0;
 scanf("%d\n%d",&from,&until);
+
+
+for(i=from;i<=until;i++){
+	money = i * keisan(i);
+	printf("%d:%d Yen.\n",i,money);
+}
 return 0;
 }
